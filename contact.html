@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-body { 
+body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     /*/background-color: #f9f9f9;/*/
@@ -31,23 +31,38 @@ body {
 .navbar a:hover {
   background-color: #575757;
 }
-.ojt{
-    text-align: center;
+.form-section {
+  background: white;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.ojt button {
+
+.form-section input, .form-section textarea, .form-section button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-section button {
   background-color:rgb(255, 94, 0);
   color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
-.ojt a{
-  color: #000000; 
-  text-decoration: none;
+
+.form-section button:hover {
+  background-color: #555;
 }
 
-.ojt button:hover {
-  background-color: #555;
-  
+h2{
+  text-align: center;
+  font-size: 30px;
 }
 
 footer {
@@ -65,55 +80,36 @@ footer {
 .foot a{
   color: rgb(255, 145, 0);
 }
-.ojt button{
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 20px;
-  text-decoration: none;
-}
     </style>
-</head>
-<body>
+ </head>
+ <body>
     <div class="navbar">
         <div><a href="#">Frontend</a></div>
-        <div>
+          <div>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="project.html">Projects</a>
             <a href="contact.html">Contact</a>
+          </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-<div class="ojt">
-    <h1>Welcome to my OJT Projects</h1>
-    <button><a href="index.html">Click here to see my Projects</a></button>
+<h2>Contact Me</h2>
+<div class="form-section">
+<!---<h2>Contact Me</h2>-->
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="8" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <footer class="foot">
-  &copy; 2025 MyWebsite. All rights reserved.
-  <!--<p>Instagram Github LinkedIn</p>!-->  
-  <br>
-  <br>
-  <a href="#instagram">Instagram</a>
-  <a href="#github">Github</a>
-  <a href="#linkin">LinkedIn</a>
+    &copy; 2025 MyWebsite. All rights reserved.
+    <!--<p>Instagram Github LinkedIn</p>!-->  
+    <br>
+    <br>
+    <a href="#instagram">Instagram</a>
+    <a href="#github">Github</a>
+    <a href="#linkin">LinkedIn</a>
 </footer>
-</body>
-</html>
+ </body>
+ </html>
